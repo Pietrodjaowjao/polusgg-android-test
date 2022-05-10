@@ -59,3 +59,8 @@ jobs:
           git commit -m "Build $GITHUB_SHA"
           git push
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Android
+          path: PolusGG/build/Android.zip
